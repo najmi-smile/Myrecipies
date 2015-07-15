@@ -1,28 +1,22 @@
-== README
+// Testing Specs for Recipes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+      name :string
+      summery :text
+      description :text
 
-Things you may want to cover:
+    Tests
+    -Name must be present between (5-50)
+    -Summery must be present (10-150)
+    -Description must be present(15-500)
+    -Cheff_ID must be present
+    
+// Testing Specs for Cheff Model
+      name  :string
+      email :string
+  
+      Tests
+      -name must be present (5-20)
+      -email must be present
+      -email should be unique
+      -validates email
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
