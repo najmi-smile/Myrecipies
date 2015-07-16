@@ -9,31 +9,13 @@
 
 <body>
 
+        <%= render 'layouts/navigation' %>
+ 
+      <div class= "container">
+        <%= yield %>
 
-
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <%= link_to "MyRecipies", " ", class: "btn btn-lg btn-success", id:"logo"%>
-    <div class = "nav_item">
-      <%= link_to "Link 1", "", class:"btn btn-default btn warning" %>
-    </div>
-    <div class = "nav_item">
-      <%= link_to "Link 2", "", class:"btn btn-default btn warning" %>
-    </div>
-    <div class = "nav_item">
-      <%= link_to "Link 3", "", class:"btn btn-default btn warning" %>
-    </div>
-    
-    
-  </div>
-  
-</nav>
-<div class= "container">
-<%= yield %>
-
-<div class="footer">
-  <p>&copy; MyRecipies 2015</p>
-</div>
-</div>
+        <%= render 'layouts/footer' %>
+      </div>
+      
 </body>
 </html>
